@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mala Amiga</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">    
+    
+    
+
+</head>
+<body>
+    <header>
+        <input id="toggle" type="checkbox" checked class="input_switch">
+        <label for="toggle" class="toggle">
+            <span class="material-symbols-outlined light" aria-label="Modo claro">light_mode</span>
+            <span class="material-symbols-outlined dark" aria-label="Modo escuro">dark_mode</span>
+        </label>
+        
+    </header>
+    <main>
+        <section class="banner">
+            <div class="wrapper">
+                <img src="Imagens/Man and a woman go on vacation.png" alt="Homem e mulher indo tirar férias" class="image_banner">
+                <div class="container_text">
+                    <h2 class="highlighted-text">Viaje tranquilo</h2>
+                    <h1 class="text">Consulte a previsão do tempo do seu lugar de destino</h1>
+                </div>
+            </div>           
+            
+        </section>
+        <section class="container weather">
+            <form class="search_weather">
+                <label for="place" class="label_weather">Destino:</label>
+                <input id="place" type="text" class="input_weather" placeholder="Digite a cidade aqui..." pattern="[a-zA-Z]+" required>
+                <button class="button-search">
+                    <span class="material-symbols-outlined search" aria-label="Pesquisar">search</span>
+                </button>
+            </form>
+            <h2 class="highlighted-text" id="city"></h2>
+            <section class="wrapper_forecast"> 
+                
+
+            </section>           
+            
+        </section>
+        <section class="container list">
+            <h2 class="highlighted-text">Hora de viajar!</h2>
+            <p class="text">Agora que você já sabe o clima do seu destino, pode fazer sua lista para não esquecer nada</p>
+            <div class="container_form">
+                <img src="Imagens/Suitcase and a planet around which a plane flies and a camera stands.png" alt="Imagem com uma mala, um planeta com o avião voando e uma máquina fotográfica" class="image_form">
+                <form class="form_travel">
+                    <label for="name" class="label_travel">Nome:</label>
+                    <input id="name" type="text" class="input_travel" placeholder="Camisa" pattern="[a-zA-Z]+" required>
+                    
+                    <label for="amount" class="label_travel">Quantidade:</label>
+                    <input id="amount" type="number" class="input_travel" placeholder="1" pattern="[0-9]+" required>
+                    
+                    <button class="button_travel">Adicionar</button>
+                </form>
+            </div>
+            <ul id="list" class="list">
+                
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p class="credit">Ilustrações por <a href="https://icons8.com.br/">Icons8</a></p>
+        
+    </footer>
+    
+    <script src="JS/main.js"></script>
+    <script src="JS/api.js"></script>
+    <script src="JS/list.js"></script>
+</body>
+</html>
